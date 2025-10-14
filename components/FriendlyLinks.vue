@@ -1,17 +1,22 @@
-<script lang='ts' setup>
-
+<script lang="ts" setup>
 const links = [
     {
-        name: '沐晴夏阳',
-        url: 'https://www.1987619.com',
+        name: "沐晴夏阳",
+        url: "https://www.1987619.com",
     },
     {
-        name: '深沟主页',
-        url: 'https://shyngo.cn/',
+        name: "深沟主页",
+        url: "https://shyngo.cn/",
     },
-
+    {
+        name: "工具箱",
+        url: "https://www.gjxx.dev/",
+    },
+    {
+        name: "Mod站",
+        url: "https://mod.3dmgame.com/",
+    },
 ];
-
 </script>
 <template>
     <div class="friendly-links">
@@ -21,19 +26,22 @@ const links = [
                 <a :href="link.url" target="_blank">{{ link.name }}</a>
             </div>
             <div class="links-list apply">
-                <a href="https://github.com/3DMXM/www.aoe.top/discussions/1" target="_blank"
-                    rel="noopener noreferrer">申请友链 + </a>
+                <a
+                    href="https://github.com/3DMXM/www.aoe.top/discussions/1"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    >申请友链 +
+                </a>
             </div>
         </div>
     </div>
 </template>
-<script lang='ts'>
-
+<script lang="ts">
 export default {
-    name: 'FriendlyLinks',
-}
+    name: "FriendlyLinks",
+};
 </script>
-<style lang='less' scoped>
+<style lang="less" scoped>
 .friendly-links {
     .links {
         display: flex;
@@ -53,7 +61,6 @@ export default {
             }
 
             &.apply {
-
                 a {
                     color: #47a9bb;
 
