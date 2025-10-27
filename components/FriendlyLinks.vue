@@ -16,6 +16,10 @@ const links = [
         name: "Mod站",
         url: "https://mod.3dmgame.com/",
     },
+    {
+        name: "一纸忘忧",
+        url: "https://blog.ikxin.com/",
+    },
 ];
 </script>
 <template>
@@ -43,29 +47,58 @@ export default {
 </script>
 <style lang="less" scoped>
 .friendly-links {
+    margin: 2rem 0;
+
+    h3 {
+        font-size: 1.5rem;
+        font-weight: 600;
+        position: relative;
+        padding-bottom: 0.5rem;
+        margin-bottom: 0.5rem;
+
+        &::after {
+            content: "";
+            position: absolute;
+            bottom: 0;
+            left: 0;
+            width: 100px;
+            height: 3px;
+            background: linear-gradient(90deg, #42b883, #47a9bb);
+            border-radius: 2px;
+        }
+    }
+
     .links {
         display: flex;
         flex-wrap: wrap;
-        gap: 10px;
+        align-items: center;
 
         .links-list {
-            padding-left: 1rem;
-
             a {
-                color: #42b883;
+                display: flex;
+                align-items: center;
+                justify-content: center;
+                padding: 0.5rem;
+                border-radius: 8px;
                 text-decoration: none;
+                font-weight: 500;
+                text-align: center;
+                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
+                border: 2px solid transparent;
+                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+                word-break: break-word;
 
                 &:hover {
-                    color: #3e916b;
+                    transform: translateY(-4px);
+                    box-shadow: 0 8px 16px rgba(66, 184, 131, 0.25);
                 }
             }
 
             &.apply {
                 a {
-                    color: #47a9bb;
-
                     &:hover {
-                        color: #49808a;
+                        border-color: #47a9bb;
+                        box-shadow: 0 8px 16px rgba(71, 169, 187, 0.25);
                     }
                 }
             }
