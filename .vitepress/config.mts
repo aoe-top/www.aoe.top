@@ -20,7 +20,7 @@ export default defineConfig({
                     { text: "Mod", link: "https://mod.3dmgame.com/u/9688990" },
                     {
                         text: "买下我",
-                        link: "https://wanwang.aliyun.com/nametrade/detail/online.html?domainName=aoe.top",
+                        link: "https://mi.aliyun.com/domain-detail?domainName=aoe.top",
                     },
                 ],
             },
