@@ -37,10 +37,13 @@ features:
   - title: 小莫的游戏库
     link: https://game.aoe.top/
     details: 是从 https://pan.aoe.top/Games/ 中分支出来的另一个游戏盘, 但由于某些问题, 该库已停止更新
+  - title: 小莫的AI工具库
+    link: https://ai.aoe.top/
+    details: 集成了一些由我自己开发的多种 AI 工具，帮助您提升工作和生活效率！
   - title: 塔罗牌
     link: https://tarot.aoe.top/
     details: 生命是一个无止境的展开的过程。如果我们愿意，它也是一个不断自我发现过程
-  - title: GlossModMCP
+  - title: Gloss Mod MCP
     link: https://github.com/GlossMod/gloss-mod-mcp
     details: 一个完整的 MCP 服务器实现，为 Claude 和其他 LLM 应用提供 3DM Mod 网站的数据访问能力。
 
