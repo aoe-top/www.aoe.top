@@ -40,6 +40,11 @@ features:
   - title: 塔罗牌
     link: https://tarot.aoe.top/
     details: 生命是一个无止境的展开的过程。如果我们愿意，它也是一个不断自我发现过程
+  - title: GlossModMCP
+    link: https://github.com/GlossMod/gloss-mod-mcp
+    details: 一个完整的 MCP 服务器实现，为 Claude 和其他 LLM 应用提供 3DM Mod 网站的数据访问能力。
+
+
 ---
 
 <!-- 友情链接区块 -->
