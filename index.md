@@ -25,9 +25,9 @@ features:
   - title: 小莫网盘
     link: https://cloud.aoe.top/
     details: 网盘现已更新至 4.0 版本, 采用了全新的设计, 赞助用户可用 WebDAV 挂载、在线解压/压缩 等功能
-  - title: 短链生成
-    link: https://s.aoe.top/
-    details: 基于 short 的一个使用 Cloudflare Pages 创建的 URL 缩短器, 可缩短你分享的链接长度
+  # - title: 短链生成
+  #   link: https://s.aoe.top/
+  #   details: 基于 short 的一个使用 Cloudflare Pages 创建的 URL 缩短器, 可缩短你分享的链接长度
   - title: 小莫的工具箱
     link: https://tools.aoe.top/
     details: 随心制作一些便利有用的工具
@@ -46,7 +46,12 @@ features:
   - title: Gloss Mod MCP
     link: https://github.com/GlossMod/gloss-mod-mcp
     details: 一个完整的 MCP 服务器实现，为 Claude 和其他 LLM 应用提供 3DM Mod 网站的数据访问能力。
-
+  - title: Glosc Copilot
+    link: https://www.glosc.ai/
+    details: Glosc Copilot 将自然语言转化为 可执行的桌面任务。 通过插件体系与社区，打造你的专属 AI 工作流。
+  - title: Glosc Nutri
+    link: https://nutri.gloscai.com/
+    details: Glosc Nutri 是一款基于 AI 的营养分析工具，帮助用户了解食物的营养成分和健康影响，助力科学饮食和健康生活。
 
 ---
 
