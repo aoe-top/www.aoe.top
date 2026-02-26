@@ -16,6 +16,9 @@ hero:
     - theme: alt
       text: Gloss Mod Manager
       link: https://gmm.aoe.top/
+    - theme: brand
+      text: 赞助小莫
+      link: https://sponsor.aoe.top/
   image:
     src: "https://mod.3dmgame.com/static/upload/mod/202307/MOD64a7767d0409f.png@webp"
     alt: 'logo'
