@@ -1,26 +1,13 @@
 <script lang="ts" setup>
-const links = [
-    {
-        name: "沐晴夏阳",
-        url: "https://www.1987619.com",
-    },
-    {
-        name: "深沟主页",
-        url: "https://shyngo.cn/",
-    },
-    {
-        name: "工具箱",
-        url: "https://www.gjxx.dev/",
-    },
-    {
-        name: "Mod站",
-        url: "https://mod.3dmgame.com/",
-    },
-    {
-        name: "一纸忘忧",
-        url: "https://blog.ikxin.com/",
-    },
-];
+import { ref } from "vue";
+
+const links = ref<any[]>([]);
+
+async function getLinks() {
+    const res = await fetch("https://api.aoe.top/api/friendly/links");
+    links.value = await res.json();
+}
+getLinks();
 </script>
 <template>
     <div class="friendly-links">
@@ -72,13 +59,14 @@ export default {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        font-size: 12px;
 
         .links-list {
             a {
                 display: flex;
                 align-items: center;
                 justify-content: center;
-                padding: 0.5rem;
+                padding: 0.2rem 0.4rem;
                 border-radius: 8px;
                 text-decoration: none;
                 font-weight: 500;
