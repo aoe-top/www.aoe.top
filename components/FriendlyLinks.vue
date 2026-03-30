@@ -54,7 +54,9 @@ export default {
                 text-decoration: none;
                 font-weight: 400;
                 text-align: center;
-                transition: color 0.2s ease, opacity 0.2s ease;
+                transition:
+                    color 0.2s ease,
+                    opacity 0.2s ease;
                 word-break: break-word;
                 color: inherit;
                 opacity: 0.72;
