@@ -16,14 +16,6 @@ getLinks();
             <div class="links-list" v-for="link in links" :key="link.name">
                 <a :href="link.url" target="_blank">{{ link.name }}</a>
             </div>
-            <div class="links-list apply">
-                <a
-                    href="https://github.com/3DMXM/www.aoe.top/discussions/1"
-                    target="_blank"
-                    rel="noopener noreferrer"
-                    >申请友链 +
-                </a>
-            </div>
         </div>
     </div>
 </template>
@@ -34,31 +26,22 @@ export default {
 </script>
 <style lang="less" scoped>
 .friendly-links {
-    margin: 2rem 0;
+    margin: 1rem 0;
 
     h3 {
-        font-size: 1.5rem;
+        font-size: 12px;
         font-weight: 600;
-        position: relative;
-        padding-bottom: 0.5rem;
-        margin-bottom: 0.5rem;
-
-        &::after {
-            content: "";
-            position: absolute;
-            bottom: 0;
-            left: 0;
-            width: 100px;
-            height: 3px;
-            background: linear-gradient(90deg, #42b883, #47a9bb);
-            border-radius: 2px;
-        }
+        letter-spacing: 0.12em;
+        text-transform: uppercase;
+        opacity: 0.72;
+        margin-bottom: 0.35rem;
     }
 
     .links {
         display: flex;
         flex-wrap: wrap;
         align-items: center;
+        gap: 0.3rem 0.5rem;
         font-size: 12px;
 
         .links-list {
@@ -67,27 +50,17 @@ export default {
                 align-items: center;
                 justify-content: center;
                 padding: 0.2rem 0.4rem;
-                border-radius: 8px;
+                border-radius: 999px;
                 text-decoration: none;
-                font-weight: 500;
+                font-weight: 400;
                 text-align: center;
-                transition: all 0.3s cubic-bezier(0.4, 0, 0.2, 1);
-                border: 2px solid transparent;
-                box-shadow: 0 2px 8px rgba(0, 0, 0, 0.08);
+                transition: color 0.2s ease, opacity 0.2s ease;
                 word-break: break-word;
+                color: inherit;
+                opacity: 0.72;
 
                 &:hover {
-                    transform: translateY(-4px);
-                    box-shadow: 0 8px 16px rgba(66, 184, 131, 0.25);
-                }
-            }
-
-            &.apply {
-                a {
-                    &:hover {
-                        border-color: #47a9bb;
-                        box-shadow: 0 8px 16px rgba(71, 169, 187, 0.25);
-                    }
+                    opacity: 1;
                 }
             }
         }
